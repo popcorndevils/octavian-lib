@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace OctavianLib
 {
-    public static class ArrayExtensions
+    public static class ExArray
     {
 
         public static T[] ToArray<T>(this SortedList<int, T> list) 

@@ -2,8 +2,18 @@ using System.Collections.Generic;
 
 namespace OctavianLib
 {
-    public static class CSharpExtensions 
+    public static class ExDictionary
     {
+        public static V GetDefault<T, V>(this Dictionary<T, V> dict, T key, V defaultVal)
+        {
+            if(dict.ContainsKey(key))
+            {
+                return dict[key];
+            }
+            
+            return defaultVal;
+        }
+
         public static Dictionary<TKey, TValue> ReplaceKey<TKey, TValue>(
             this IDictionary<TKey, TValue> dic, TKey fromKey, TKey toKey)
         {

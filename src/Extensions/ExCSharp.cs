@@ -4,7 +4,7 @@ using System.ArrayExtensions;
 
 namespace System
 {
-    public static class ObjectExtensions
+    public static class ExCSharp
     {
         private static readonly MethodInfo CloneMethod = typeof(Object).GetMethod("MemberwiseClone", BindingFlags.NonPublic | BindingFlags.Instance);
 

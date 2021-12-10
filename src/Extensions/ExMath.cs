@@ -2,7 +2,7 @@ using System.Linq;
 
 namespace System
 {
-    public static class MathX
+    public static class ExMath
     {
         /// <summary>
         /// Calculates the Greatest Common Factor of two integers.
@@ -31,9 +31,9 @@ namespace System
                 int a = numbers[0].Copy();
                 int b = numbers[1].Copy();
 
-                _newNums[0] = MathX.GCF(a, b);
+                _newNums[0] = ExMath.GCF(a, b);
 
-                return MathX.GCF(_newNums);
+                return ExMath.GCF(_newNums);
             }
 
             else if(numbers.Length == 2)
@@ -42,7 +42,7 @@ namespace System
                 int a = numbers[0].Copy();
                 int b = numbers[1].Copy();
 
-                return MathX.GCF(a, b);
+                return ExMath.GCF(a, b);
             }
 
             else if(numbers.Length == 1)
@@ -58,7 +58,7 @@ namespace System
         /// </summary>
         public static int LCD(int a, int b)
         {
-            return (a / MathX.GCF(new int[]{a, b})) * b;
+            return (a / ExMath.GCF(new int[]{a, b})) * b;
         }
 
         /// <summary>
@@ -74,16 +74,16 @@ namespace System
                 int a = numbers[0].Copy();
                 int b = numbers[1].Copy();
 
-                _newNums[0] = MathX.LCD(a, b);
+                _newNums[0] = ExMath.LCD(a, b);
 
-                return MathX.LCD(_newNums);
+                return ExMath.LCD(_newNums);
             }
             else if(numbers.Length == 2)
             {
                 int a = numbers[0].Copy();
                 int b = numbers[1].Copy();
 
-                return MathX.LCD(a, b);
+                return ExMath.LCD(a, b);
             }
 
             else if(numbers.Length == 1)
